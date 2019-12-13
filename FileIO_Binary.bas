@@ -1,4 +1,4 @@
-Attribute VB_Name = "FileIO_Binary"
+Attribute VB_Name = "FileIO_ReadWriteBinary"
 Option Explicit
 
 Sub FileIO_Binary()

@@ -13,7 +13,7 @@ Sub OptionBaseSample()
     ArrayData = Array("0", "1", "2")
     SplitData = Split("0,1,2", ",")
     
-    MsgBox "Array ： " & ArrayData(1) & vbCrLf _
-        & "Split  ： " & SplitData(1)
+    MsgBox "Array ﾂ： " & ArrayData(1) & vbCrLf _
+        & "Split  ﾂ： " & SplitData(1)
 
 End Sub

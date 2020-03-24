@@ -11,5 +11,3 @@ End Function
 Sub Sample()
     MsgBox (RowCol2TextAddress(1, 1))
 End Sub
-
-

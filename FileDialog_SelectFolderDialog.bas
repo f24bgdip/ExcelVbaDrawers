@@ -1,4 +1,5 @@
 Attribute VB_Name = "FileDialog_SelectFolderDialog"
+
 Public Function SelectFolderDialog(Optional ByRef strTitle As String) As String
     'SelectFolderDialog
     With Application.FileDialog(msoFileDialogFolderPicker)
@@ -10,4 +11,3 @@ Public Function SelectFolderDialog(Optional ByRef strTitle As String) As String
         End If
     End With
 End Function
-

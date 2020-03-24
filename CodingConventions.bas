@@ -16,21 +16,21 @@ Option Explicit
 ' 
 Sub ProcedureCall()
     ' Variable declaration
-    Dim wb As Workbook
-    Dim wsIn As Worksheet, wsOut As Worksheet
+    Dim bok As Workbook
+    Dim shtIn As Worksheet, shtOut As Worksheet
     Dim rng As Range
-    Dim vt As Variant
+    Dim vnt As Variant
     Dim str As String
     
     ' Regist Exception processing
-    On Error GoTo ExceptionHandler
+    On Error GoTo ErrorHandler
 
     ' Stop updationg screen
     Application.ScreenUpdating = False
     
     ' Initialization
-    Set wb = Workbooks("sample.xlsx")
-    Set wsIn = wb.Worksheets("sheet")
+    Set bok = Workbooks("sample.xlsx")
+    Set shtIn = bok.Worksheets("sheet")
     
 
     ' Input
@@ -60,8 +60,8 @@ Sub ProcedureCall()
     MsgBox str
    
     
-' Exception handling
-ExceptionHandler:
+' Error handling
+ErrorHandler:
 
     ' Restart updationg screen
     Application.ScreenUpdating = True

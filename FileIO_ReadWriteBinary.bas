@@ -8,7 +8,7 @@ Sub FileIO_Binary()
 
     ' Set the input file name, and
     ' set the file number with free number.
-    inputFileName = "C:\in.jpg"
+    inputFileName = "C:\example_input.jpg"
     inputFn = FreeFile
 
     ' Read the input file as binary.
@@ -27,7 +27,7 @@ Sub FileIO_Binary()
     
     ' Set the output file name, and
     ' set the file number with free number.
-    outputFileName = "C:\out.jpg"
+    outputFileName = "C:\example_output.jpg"
     outputFn = FreeFile
 
     ' Write the output file by the input file.
@@ -38,4 +38,5 @@ Sub FileIO_Binary()
             Put #outputFn, , buffer(i)
         Next
     Close #outputFn
+
 End Sub
